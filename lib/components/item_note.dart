@@ -23,7 +23,6 @@ class ProductCard extends StatelessWidget {
                 Text(
                   product.title,
                   style: TextStyle(
-                    fontFamily: 'Montserrat-Regular', // Указание шрифта
                     fontSize: 16,
                   ),
                   softWrap: true 
@@ -32,7 +31,6 @@ class ProductCard extends StatelessWidget {
                 Text(
                   product.duration,
                   style: TextStyle(
-                    fontFamily: 'Montserrat-Regular', // Указание шрифта
                     fontSize: 14, 
                     color: Colors.grey,
                   ),
@@ -41,7 +39,6 @@ class ProductCard extends StatelessWidget {
                 Text(
                   '${product.price} Р',
                   style: TextStyle(
-                    fontFamily: 'Montserrat-Regular', // Указание шрифта
                     fontSize: 17, 
                     fontWeight: FontWeight.w500,
                   ),
@@ -58,7 +55,6 @@ class ProductCard extends StatelessWidget {
             child: Text(
               'Добавить', 
               style: TextStyle(
-                fontFamily: 'Montserrat-Medium', // Указание шрифта
                 fontSize: 14
               )
             ),
