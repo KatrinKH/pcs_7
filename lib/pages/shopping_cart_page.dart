@@ -17,7 +17,7 @@ class ShoppingCartPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {},
               child: Text('Перейти к оформлению заказа'),
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
+              style: ElevatedButton.styleFrom(backgroundColor: const Color.fromRGBO(26, 111, 238, 1)),
             ),
           ],
         ),

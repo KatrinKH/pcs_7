@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: const Color.fromARGB(255, 32, 100, 156),
+        selectedItemColor: const Color.fromRGBO(26, 111, 238, 1),
         onTap: _onItemTapped,
       ),
     );
