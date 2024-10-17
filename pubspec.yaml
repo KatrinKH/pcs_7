@@ -90,6 +90,15 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: fonts/Montserrat-Light.ttf
+        - asset: fonts/Montserrat-Medium.ttf
+        - asset: fonts/Montserrat-Regular.ttf
+          weight: 700
+          
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
