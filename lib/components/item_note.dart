@@ -50,7 +50,7 @@ class ProductCard extends StatelessWidget {
               child: Text('Добавить'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromRGBO(26, 111, 238, 1), 
-                textStyle: TextStyle(color: const Color.fromARGB(255, 255, 255, 255)),
+                foregroundColor: Colors.white,
               ),
             ),
           ],
