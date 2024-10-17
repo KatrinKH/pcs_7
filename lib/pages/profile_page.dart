@@ -14,31 +14,42 @@ class ProfilePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Эдуард',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 8),
             Text('+7 900 800-55-33'),
             Text('email@gmail.com'),
             SizedBox(height: 20),
             ListTile(
-              leading: Icon(Icons.assignment),
+              leading: Image.asset(
+                'assets/icons/1.Заказы.png',
+                height: 40.0, 
+                width: 40.0,  
+              ),
               title: Text('Мои заказы'),
               onTap: () {},
             ),
             ListTile(
-              leading: Icon(Icons.folder),
+              leading: Image.asset(
+                'assets/icons/2.Карты.png',
+                height: 40.0, 
+                width: 40.0,  
+              ),
               title: Text('Медицинские карты'),
               onTap: () {},
             ),
             ListTile(
-              leading: Icon(Icons.home),
+              leading: Image.asset(
+                'assets/icons/3.Адреса.png',
+                height: 40.0, 
+                width: 40.0,  
+              ),
               title: Text('Мои адреса'),
               onTap: () {},
             ),
             ListTile(
-              leading: Icon(Icons.settings),
+              leading: Image.asset(
+                'assets/icons/4.Настройки.png',
+                height: 40.0, 
+                width: 40.0,  
+              ),
               title: Text('Настройки'),
               onTap: () {},
             ),
