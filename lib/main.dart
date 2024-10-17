@@ -57,15 +57,15 @@ class _MyHomePageState extends State<MyHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: ImageIcon(AssetImage('assets/menu/3.Home.png')),
             label: 'Главная',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart),
+            icon: ImageIcon(AssetImage('assets/menu/2.Shopping_cart.png')),
             label: 'Корзина',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
+            icon: ImageIcon(AssetImage('assets/menu/1.Profile.png')),
             label: 'Профиль',
           ),
         ],
