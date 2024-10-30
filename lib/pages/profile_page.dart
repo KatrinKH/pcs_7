@@ -58,6 +58,7 @@ class ProfilePage extends StatelessWidget {
               onTap: () {},
             ),
             const SizedBox(height: 10),
+
             ListTile(
               leading: Image.asset(
                 'assets/icons/2.Карты.png',
@@ -74,6 +75,7 @@ class ProfilePage extends StatelessWidget {
               onTap: () {},
             ),
             const SizedBox(height: 10),
+
             ListTile(
               leading: Image.asset(
                 'assets/icons/3.Адреса.png',
@@ -90,6 +92,7 @@ class ProfilePage extends StatelessWidget {
               onTap: () {},
             ),
             const SizedBox(height: 10),
+
             ListTile(
               leading: Image.asset(
                 'assets/icons/4.Настройки.png',
@@ -106,7 +109,7 @@ class ProfilePage extends StatelessWidget {
               onTap: () {},
             ),
             const SizedBox(height: 24),
-
+            
             Center(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
