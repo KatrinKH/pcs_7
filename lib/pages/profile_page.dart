@@ -108,7 +108,7 @@ class ProfilePage extends StatelessWidget {
               ),
               onTap: () {},
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: 40),
             
             Center(
               child: Column(
@@ -122,7 +122,7 @@ class ProfilePage extends StatelessWidget {
                       fontSize: 15,
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 30),
 
                   const Text(
                     'Политика конфиденциальности',
@@ -132,7 +132,7 @@ class ProfilePage extends StatelessWidget {
                       fontSize: 15,
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 30),
 
                   const Text(
                     'Пользовательское соглашение',
