@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 255, 255, 255)),
         scaffoldBackgroundColor: Color.fromARGB(255, 255, 255, 255),
         useMaterial3: true,
-        fontFamily: 'Montserrat', // Задаем кастомный шрифт как основной
+        fontFamily: 'Montserrat', 
       ),
       home: const MyHomePage(),
     );
@@ -70,10 +70,10 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: const Color.fromRGBO(26, 111, 238, 1), // Цвет текста при выборе
-        unselectedItemColor: Colors.grey, // Цвет текста для невыбранных элементов
+        selectedItemColor: const Color.fromRGBO(26, 111, 238, 1), 
+        unselectedItemColor: Colors.grey, 
         onTap: _onItemTapped,
-        type: BottomNavigationBarType.fixed, // Задает фиксированный тип, чтобы кнопки оставались одинаковыми
+        type: BottomNavigationBarType.fixed, 
       ),
     );
   }
