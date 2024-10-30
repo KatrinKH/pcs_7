@@ -5,43 +5,38 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.start, 
-          children: [
-            Text(
-              'Эдуард',
-              style: TextStyle(
-                fontFamily: 'Montserrat-Medium',
-                fontSize: 24,
-              ),
-            ),
-          ],
+        title: const Text(
+          'Эдуард',
+          style: TextStyle(
+            fontFamily: 'Montserrat-Medium',
+            fontSize: 24,
+          ),
         ),
         backgroundColor: Colors.white,
         elevation: 0,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const SizedBox(height: 24),
+            const Text(
               '+7 900 800-55-33',
               style: TextStyle(
                 fontFamily: 'Montserrat-Medium',
                 fontSize: 15,
               ),
             ),
-            SizedBox(height: 8), 
-
-            Text(
+            const SizedBox(height: 4),
+            const Text(
               'email@gmail.com',
               style: TextStyle(
                 fontFamily: 'Montserrat-Medium',
                 fontSize: 15,
               ),
             ),
-            SizedBox(height: 40), 
+            const SizedBox(height: 24),
 
             ListTile(
               leading: Image.asset(
@@ -58,8 +53,8 @@ class ProfilePage extends StatelessWidget {
               ),
               onTap: () {},
             ),
-            SizedBox(height: 10), 
 
+            const SizedBox(height: 10),
             ListTile(
               leading: Image.asset(
                 'assets/icons/2.Карты.png',
@@ -75,8 +70,8 @@ class ProfilePage extends StatelessWidget {
               ),
               onTap: () {},
             ),
-            SizedBox(height: 10), 
-            
+
+            const SizedBox(height: 10),
             ListTile(
               leading: Image.asset(
                 'assets/icons/3.Адреса.png',
@@ -92,8 +87,8 @@ class ProfilePage extends StatelessWidget {
               ),
               onTap: () {},
             ),
-            SizedBox(height: 10), 
-            
+
+            const SizedBox(height: 10),
             ListTile(
               leading: Image.asset(
                 'assets/icons/4.Настройки.png',
@@ -109,12 +104,52 @@ class ProfilePage extends StatelessWidget {
               ),
               onTap: () {},
             ),
-            Spacer(),
+            const SizedBox(height: 24),
 
-            TextButton(
-              onPressed: () {},
-              child: Text('Выход'),
-              style: TextButton.styleFrom(foregroundColor: Colors.red),
+            Center(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const Text(
+                    'Ответы на вопросы',
+                    style: TextStyle(
+                      fontFamily: 'Montserrat-Light',
+                      color: Colors.grey,
+                      fontSize: 15,
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Политика конфиденциальности',
+                    style: TextStyle(
+                      fontFamily: 'Montserrat-Light',
+                      color: Colors.grey,
+                      fontSize: 15,
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Пользовательское соглашение',
+                    style: TextStyle(
+                      fontFamily: 'Montserrat-Light',
+                      color: Colors.grey,
+                      fontSize: 15,
+                    ),
+                  ),
+                  const SizedBox(height: 24),
+                  TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      'Выход',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat-Light',
+                        color: Colors.red,
+                        fontSize: 15,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
