@@ -119,6 +119,7 @@ class ProfilePage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 20),
+
                   const Text(
                     'Политика конфиденциальности',
                     style: TextStyle(
@@ -128,6 +129,7 @@ class ProfilePage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 20),
+
                   const Text(
                     'Пользовательское соглашение',
                     style: TextStyle(
@@ -137,6 +139,7 @@ class ProfilePage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 24),
+                  
                   TextButton(
                     onPressed: () {},
                     child: const Text(
