@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 255, 255, 255)),
         scaffoldBackgroundColor: Color.fromARGB(255, 255, 255, 255),
         useMaterial3: true,
+        fontFamily: 'Montserrat', // Задаем кастомный шрифт как основной
       ),
       home: const MyHomePage(),
     );
@@ -34,7 +35,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
-
 
   List<Widget> _widgetOptions() {
     return [
@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _widgetOptions().elementAt(_selectedIndex), 
+      body: _widgetOptions().elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -70,8 +70,10 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: const Color.fromRGBO(26, 111, 238, 1),
+        selectedItemColor: const Color.fromRGBO(26, 111, 238, 1), // Цвет текста при выборе
+        unselectedItemColor: Colors.grey, // Цвет текста для невыбранных элементов
         onTap: _onItemTapped,
+        type: BottomNavigationBarType.fixed, // Задает фиксированный тип, чтобы кнопки оставались одинаковыми
       ),
     );
   }
