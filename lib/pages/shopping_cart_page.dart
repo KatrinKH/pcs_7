@@ -1,54 +1,53 @@
 import 'package:flutter/material.dart';
 
-
 class ShoppingCartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Корзина'),
+        title: const Text(
+          'Корзина',
+          style: TextStyle(
+            fontFamily: 'Montserrat-Medium', 
+            fontSize: 24,
+            color: Colors.black, 
+          ),
+        ),
         backgroundColor: Colors.white,
         elevation: 0,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start, 
           children: [
-            ElevatedButton(
-              onPressed: () {},
-              child: Text('Перейти к оформлению заказа'),
-              style: ElevatedButton.styleFrom(backgroundColor: const Color.fromRGBO(26, 111, 238, 1)),
+            Expanded(child: Container()), 
+
+            Center( 
+              child: SizedBox(
+                width: 335, 
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: const Text(
+                    'Перейти к оформлению заказа',
+                    style: TextStyle(
+                      fontFamily: 'Montserrat-Medium', 
+                      fontSize: 17, 
+                      color: Colors.white, 
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    minimumSize: const Size(double.infinity, 56), 
+                    backgroundColor: const Color.fromRGBO(26, 111, 238, 1),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0), 
+                    ),
+                  ),
+                ),
+              ),
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class CartItem extends StatelessWidget {
-  final String title;
-  final double price;
-
-  CartItem({required this.title, required this.price});
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(title),
-              SizedBox(height: 8),
-              Text('1 пациент', style: TextStyle(color: Colors.grey)),
-            ],
-          ),
-          Text('$price Р'),
-        ],
       ),
     );
   }
