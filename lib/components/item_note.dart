@@ -3,8 +3,9 @@ import 'package:pcs_7/model/note.dart';
 
 class ProductCard extends StatelessWidget {
   final Analysis product;
+  final Function(Analysis) onAddToCart; 
 
-  ProductCard({required this.product});
+  ProductCard({required this.product, required this.onAddToCart}); 
 
   @override
   Widget build(BuildContext context) {
@@ -21,40 +22,42 @@ class ProductCard extends StatelessWidget {
           children: [
             Text(
               product.title,
-              style: TextStyle(
-                fontFamily: 'Montserrat-Regular', 
-                fontSize: 16, 
+              style: const TextStyle(
+                fontFamily: 'Montserrat-Regular',
+                fontSize: 16,
               ),
               softWrap: true,
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Text(
               product.duration,
-              style: TextStyle(
-                fontFamily: 'Montserrat-Regular', 
-                fontSize: 14, 
+              style: const TextStyle(
+                fontFamily: 'Montserrat-Regular',
+                fontSize: 14,
                 color: Colors.grey,
               ),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   '${product.price} Р',
-                  style: TextStyle(
-                    fontFamily: 'Montserrat-Regular', 
-                    fontSize: 17, 
+                  style: const TextStyle(
+                    fontFamily: 'Montserrat-Regular',
+                    fontSize: 17,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
+                  onPressed: () {
+                    onAddToCart(product); 
+                  },
+                  child: const Text(
                     'Добавить',
                     style: TextStyle(
-                      fontFamily: 'Montserrat-Medium', 
-                      fontSize: 14, 
+                      fontFamily: 'Montserrat-Medium',
+                      fontSize: 14,
                     ),
                   ),
                   style: ElevatedButton.styleFrom(
@@ -67,7 +70,7 @@ class ProductCard extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 1),
+            const SizedBox(height: 1),
           ],
         ),
       ),

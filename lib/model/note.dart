@@ -2,8 +2,9 @@ class Analysis {
   final String title;
   final double price;
   final String duration;
+  int quantity;
 
-  Analysis({required this.title, required this.price, required this.duration});
+  Analysis({required this.title, required this.price, required this.duration, this.quantity = 1,});
 }
 
 List<Analysis> analyses = [
