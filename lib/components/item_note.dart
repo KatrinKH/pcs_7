@@ -22,7 +22,8 @@ class ProductCard extends StatelessWidget {
             Text(
               product.title,
               style: TextStyle(
-                fontSize: 16,
+                fontFamily: 'Montserrat-Regular', 
+                fontSize: 16, 
               ),
               softWrap: true,
             ),
@@ -30,7 +31,8 @@ class ProductCard extends StatelessWidget {
             Text(
               product.duration,
               style: TextStyle(
-                fontSize: 14,
+                fontFamily: 'Montserrat-Regular', 
+                fontSize: 14, 
                 color: Colors.grey,
               ),
             ),
@@ -41,7 +43,8 @@ class ProductCard extends StatelessWidget {
                 Text(
                   '${product.price} Р',
                   style: TextStyle(
-                    fontSize: 17,
+                    fontFamily: 'Montserrat-Regular', 
+                    fontSize: 17, 
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -49,7 +52,10 @@ class ProductCard extends StatelessWidget {
                   onPressed: () {},
                   child: Text(
                     'Добавить',
-                    style: TextStyle(fontSize: 14),
+                    style: TextStyle(
+                      fontFamily: 'Montserrat-Medium', 
+                      fontSize: 14, 
+                    ),
                   ),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromRGBO(26, 111, 238, 1),
@@ -61,7 +67,7 @@ class ProductCard extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 1), 
+            SizedBox(height: 1),
           ],
         ),
       ),

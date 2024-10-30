@@ -7,7 +7,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Каталог услуг', style: TextStyle(color: Colors.black)),
+        title: Text(
+          'Каталог услуг',
+          style: TextStyle(
+            color: Colors.black,
+            fontFamily: 'Montserrat-Medium', 
+            fontSize: 24, 
+          ),
+        ),
         backgroundColor: Colors.white,
         elevation: 0,
         iconTheme: IconThemeData(color: Colors.black), 
