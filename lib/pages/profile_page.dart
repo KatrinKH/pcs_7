@@ -5,11 +5,15 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Эдуард',
-          style: TextStyle(
-            fontFamily: 'Montserrat-Medium',
-            fontSize: 24,
+        title: Align(
+          alignment: Alignment.centerLeft, 
+          child: const Text(
+            'Эдуард',
+            style: TextStyle(
+              fontFamily: 'Montserrat-Medium',
+              fontSize: 24,
+              color: Colors.black,
+            ),
           ),
         ),
         backgroundColor: Colors.white,
@@ -53,7 +57,6 @@ class ProfilePage extends StatelessWidget {
               ),
               onTap: () {},
             ),
-
             const SizedBox(height: 10),
             ListTile(
               leading: Image.asset(
@@ -70,7 +73,6 @@ class ProfilePage extends StatelessWidget {
               ),
               onTap: () {},
             ),
-
             const SizedBox(height: 10),
             ListTile(
               leading: Image.asset(
@@ -87,7 +89,6 @@ class ProfilePage extends StatelessWidget {
               ),
               onTap: () {},
             ),
-
             const SizedBox(height: 10),
             ListTile(
               leading: Image.asset(
@@ -139,7 +140,7 @@ class ProfilePage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 24),
-                  
+
                   TextButton(
                     onPressed: () {},
                     child: const Text(
